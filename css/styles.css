@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+    font-family: "EB Garamond"; 
+    font-size: 48px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+}
+h2 {
+    font-family: "EB Garamond";
+    font-size: 36px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+p { 
+    font-family: Lora;
+    font-size: 18px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+}
+a { 
+    font-family: Vollkorn; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 26.4px; 
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+a:hover {
+    color: black;
+    text-decoration: wavy;
+}
+
+.bloglink:hover {
+    text-decoration: none;
+}
