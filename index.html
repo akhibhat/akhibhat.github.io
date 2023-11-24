@@ -1,40 +1,111 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" >
+
     <head>
+        <meta charset="UTF-8">
+
+        <title>Akhilesh Bhat</title>
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet'>
+        <link rel="stylesheet" href="css/bootstrap.css"> 
         <link rel="stylesheet" href="css/styles.css">
 
-        <title> Akhilesh Bhat </title>
 
-        <script src=" http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+        </style>
 
+        <script>
+            window.console = window.console || function(t) {};
+        </script>
     </head>
 
-    <body>
-        <a href="index.html"> Home </a>
-        &nbsp;
-        <a href="robotics.html"> Robotics </a>
-        &nbsp;
-        <a href="travels/index.html"> Travels </a>
-        &nbsp;
-        <a href="astrology/index.html"> Astrology </a>
+    <body translate="no">
+        <!-- Hero -->
+        <section class="et-hero-tabs">
+            <h1>Hello! I'm Akhilesh</h1>
+            <h3></h3>
+            <div class="et-hero-tabs-container">
+                <a class="et-hero-tab" href="#tab-es6">About Me</a>
+                <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
+                <a class="et-hero-tab" href="#tab-react">Travel</a>
+                <a class="et-hero-tab" href="#tab-angular">Astrology</a>
+                <a class="et-hero-tab" href="#tab-other">Other</a>
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
 
-        <hr></hr>
-
-        <div class="container">
-
-            <h1 id="title" onclick="alert('This is Akhilesh')"> Hello! </h1>
-
-            <p>
-                This is my personal page. I will be updating my professional as well as personal information here.
-            </p>
-
-            <p>
-                I plan to write blogs - about my travels as well as about my journey into the field of astrology.
-            </p>
-        </div>
+        <!-- Main -->
+        <main class="et-main">
+            <section class="et-slide" id="tab-es6">
+                <h1>About Me</h1>
+                <h3>Let me tell you about myself with this timeline</h3>
+            </section>
+            <section class="et-slide" id="tab-flexbox">
+                <h1>Projects</h1>
+                <h3>Let me show you some cool things</h3>
+            </section>
+            <section class="et-slide" id="tab-react">
+                <h2>Let me share with you some of my adventures</h2>
+                <div class="container-fluid py-2">
+                    <div class="d-flex flex-row flex-nowrap">
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-img waves-effect waves-block waves-light">
+                                    <img alt="" src="images/explorers.jpg" style="height: 100%; width: 100%" class="activator" />
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Explorer's Fellowship</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="et-slide" id="tab-angular">
+                <h1>Astrology</h1>
+                <h3>Wouldn't believe it, would you?</h3>
+            </section>
+            <section class="et-slide" id="tab-other">
+                <h1>Other</h1>
+                <h3>something else is there as well :P</h3>
+            </section>
+        </main>
         
+        <script id="rendered-js" src="js/stickyslidernav.js">
+        </script>
     </body>
-    
+
 </html>
