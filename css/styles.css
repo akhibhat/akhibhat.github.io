@@ -6,6 +6,7 @@ h1 {
     font-variant: normal; 
     font-weight: 700; 
     line-height: 26.4px; 
+    color: #eee;
 }
 h2 {
     font-family: "EB Garamond";
@@ -14,18 +15,24 @@ h2 {
     font-variant: normal;
     font-weight: 500;
     line-height: 26.4px;
+    color: #eee;
+}
+h3 {
+    font-family: Lora;
+    font-size: 32px;
+    color: #eee;
 }
 p { 
     font-family: Lora;
     font-size: 18px; 
     font-style: normal; 
     font-variant: normal; 
-    font-weight: 400; 
+    font-weight: 300; 
     line-height: 20px; 
 }
 a { 
     font-family: Vollkorn; 
-    font-size: 20px; 
+    font-size: 24px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
@@ -41,4 +48,334 @@ a:hover {
 
 .bloglink:hover {
     text-decoration: none;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+}
+
+/* Social stuff */
+.social-menu ul{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    margin-top: 20;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-menu ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #CD486B;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #4267B2;
+}
+.social-menu ul li:nth-child(5) a:hover{
+    background-color: #000;
+}
+
+/* The styles required for the stickyslider navigation*/
+
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #003471;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.et-hero-tabs h1,
+.et-slide h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+            
+.et-hero-tabs h3,
+.et-slide h3 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+}
+
+.et-hero-tabs-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    z-index: 10;
+}
+
+.et-hero-tabs-container--top {
+    position: fixed;
+    top: 0;
+}
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #003471;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.et-hero-tab:hover {
+    color: white;
+    background: #003471;
+    transition: all 0.5s ease-out;
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+    .et-hero-tabs h1,
+    .et-slide h1 {
+        font-size: 3rem;
+    }
+    .et-hero-tabs h3,
+    .et-slide h3 {
+        font-size: 1rem;
+    }
+
+    .et-hero-tab {
+        font-size: 1.2rem;
+    }
+}
+
+/* Styles for the timeline in about section */
+
+* {
+    box-sizing: border-box;
+}
+  
+.container {
+    height: 100%;
+    background-color: #003471;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 38px;
+    color: #003471;
+    font-weight: 300;
+}
+
+.timeline {
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.timeline-nav__item {
+    width: auto;
+    height: auto;
+    text-align: center;
+    opacity: 0.5;
+    background: transparent;
+    color: #eee;
+    margin: 15px 25px !important;
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    outline: none;
+    cursor: pointer;
+}
+
+.timeline-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #eee;
+    transition: 0.2s;
+}
+
+.timeline-nav__item.slick-current {
+    color: #ff9900;
+    opacity: 1;
+}
+
+.timeline-nav__item.slick-current::before {
+    background-color: #ff9900;
+}
+
+.timeline-wrapper {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    margin: 60px auto;
+}
+
+@media (max-width: 500px) {
+    .timeline-wrapper {
+        height: 1000px;
+        max-height: 900px;
+    }
+}
+
+.timeline-slider {
+    height: 100%;
+}
+
+.timeline .slick-list {
+    height: 100%;
+}
+
+@media (min-width: 1080px) {
+    .timeline .slick-list {
+        padding: 0 180px !important;
+    }
+}
+
+.timeline .slick-track {
+    height: 100%;
+}
+
+.timeline-slide {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    outline: none;
+    background-size: auto 400px, cover;
+    background-position: top;
+    margin: 0 24px;
+    width: 80%;
+    z-index: 1;
+}
+
+.timeline-slide:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 52, 113, 0.8);
+    z-index: 2;
+}
+
+.timeline-slide__content {
+    z-index: 5;
+    position: absolute;
+    top: 220px;
+    background: #ffffff;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    padding: 40px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+@media (max-width: 500px) {
+    .timeline-slide__content {
+        width: 100%;
+    }
+}
+
+.timeline-year {
+    z-index: 5;
+    font-size: 35px;
+    color: #ffffff;
+    background: #ff9900;
+    padding: 15px 26px;
+    transition: opacity 1.2s;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+
+.timeline-title {
+    color: #ff9900;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.timeline-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+    text-align: left;
+}
+
+.timeline .slick-current:after {
+    background-color: rgba(0, 52, 113, 0);
+}
+
+.timeline .slick-current .timeline-year {
+    opacity: 1;
+}
+
+.timeline .slick-current .timeline-slide__content {
+    opacity: 1;
 }

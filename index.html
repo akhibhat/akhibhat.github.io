@@ -1,40 +1,176 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" >
+
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Akhilesh Bhat</title>
         <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css"> 
         <link rel="stylesheet" href="css/styles.css">
 
-        <title> Akhilesh Bhat </title>
-
-        <script src=" http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+        <script>
+            window.console = window.console || function(t) {};
+        </script>
+        <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
     </head>
 
-    <body>
-        <a href="index.html"> Home </a>
-        &nbsp;
-        <a href="robotics.html"> Robotics </a>
-        &nbsp;
-        <a href="travels/index.html"> Travels </a>
-        &nbsp;
-        <a href="astrology/index.html"> Astrology </a>
+    <body translate="no">
+        <!-- Hero -->
+        <section class="et-hero-tabs">
+            <h1>Hello! I'm Akhilesh Bhat</h1>
+            <h3 style="color:#eee; font-size: 36px;"><span class="typing" style="font-weight: 500; font-size: 32px; color:#eee;"></span></h3>
+            <div class="social-menu">
+                <ul>
+                    <li><a href="https://github.com/akhibhat" target="blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/akhibhat9/" target="blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/akhibhat/" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/akhileshreddevils.bhat/" target="blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/akhibhat30/" target="blank"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="et-hero-tabs-container">
+                <a class="et-hero-tab" href="#tab-es6">About Me</a>
+                <a class="et-hero-tab" href="#tab-flexbox">Projects</a>
+                <a class="et-hero-tab" href="#tab-react">Travel</a>
+                <a class="et-hero-tab" href="#tab-angular">Astrology</a>
+                <a class="et-hero-tab" href="#tab-other">Other</a>
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
 
-        <hr></hr>
+        <!-- Main -->
+        <main class="et-main">
+            <section class="et-slide" id="tab-es6">
+                <div class="container">
+                    <div class="timeline">
+                        <!--h1 class="title">My journey until now</h1-->
+                        <div class="timeline-nav">
+                            <div class="timeline-nav__item">1996</div>
+                            <div class="timeline-nav__item">2002</div>
+                            <div class="timeline-nav__item">2012</div>
+                            <div class="timeline-nav__item">2014</div>
+                            <div class="timeline-nav__item">2018</div>
+                            <div class="timeline-nav__item">2020</div>
+                            <div class="timeline-nav__item">2021</div>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-slider">
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=11)" data-year="1996"> <span class="timeline-year">1996</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title">Entry into this world!</h4>
+                                        <p class="timeline-text">I was born on Saturday, the 30th of November in Thane, India</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=12)" data-year="2002"> <span class="timeline-year">2002</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title">Primary Education</h4>
+                                        <p class="timeline-text">After completing my pre-primary eduction I joined Smt. Sulochanadevi Singhania School, where I studied from Class I to Class X.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=11)" data-year="2012"> <span class="timeline-year">2012</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title"></h4>
+                                        <p class="timeline-text">I graduated Class X with an aggregate score of 96.43% in the ICSE Board exams</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=12)" data-year="2014"> <span class="timeline-year">2014</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title"></h4>
+                                        <p class="timeline-text">I graduated Class XII with an aggregate score of 90.15% in the Maharashtra State Board Exams. I also secured rank 3046 in the IITJEE examination which allowed me to join IIT Gandhinagar for my B.Tech in Mechanical Engineering. </p>
+                                    </div>
+                                </div>
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=13)" data-year="2018"> <span class="timeline-year">2018</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title">Our first project</h4>
+                                        <p class="timeline-text">First project for the leading film actress Jamuna Barua, wife of Pramathesh Barua the legendary actor, director, and screenwriter</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=11)" data-year="2020"> <span class="timeline-year">2020</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title">Our first project</h4>
+                                        <p class="timeline-text">First project for the leading film actress Jamuna Barua, wife of Pramathesh Barua the legendary actor, director, and screenwriter</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-slide" style="background-image: url(https://unsplash.it/1920/600?image=12)" data-year="2021"> <span class="timeline-year">2021</span>
+                                    <div class="timeline-slide__content">
+                                        <h4 class="timeline-title">Our first project</h4>
+                                        <p class="timeline-text">First project for the leading film actress Jamuna Barua, wife of Pramathesh Barua the legendary actor, director, and screenwriter</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="et-slide" id="tab-flexbox">
+                <h1>Projects</h1>
+                <h3>Let me show you some cool things</h3>
+            </section>
+            <section class="et-slide" id="tab-react">
+                <h2>Let me share with you some of my adventures</h2>
+                <div class="container-fluid py-2">
+                    <div class="d-flex flex-row flex-nowrap">
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-img waves-effect waves-block waves-light">
+                                    <img alt="" src="images/explorers.jpg" style="height: 100%; width: 100%" class="activator" />
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Explorer's Fellowship</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="et-slide" id="tab-angular">
+                <h1>Astrology</h1>
+                <h3>Wouldn't believe it, would you?</h3>
+            </section>
+            <section class="et-slide" id="tab-other">
+                <h1>Other</h1>
+                <h3>something else is there as well :P</h3>
+            </section>
+        </main>
 
-        <div class="container">
-
-            <h1 id="title" onclick="alert('This is Akhilesh')"> Hello! </h1>
-
-            <p>
-                This is my personal page. I will be updating my professional as well as personal information here.
-            </p>
-
-            <p>
-                I plan to write blogs - about my travels as well as about my journey into the field of astrology.
-            </p>
-        </div>
-        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js'></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script id="rendered-js" src="js/stickyslidernav.js">
+        </script>
     </body>
-    
+
 </html>
