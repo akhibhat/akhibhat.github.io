@@ -10,16 +10,18 @@ $(function () {
         infinite: false,
         responsive: [
         {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 8 } },
-    
-    
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 8 
+            } 
+        },
         {
         breakpoint: 0,
         settings: {
             slidesToShow: 4,
-            slidesToScroll: 2 } }] });
+            slidesToScroll: 2 } 
+        }] 
+    });
 
     $('.timeline-slider').slick({
         slidesToShow: 1,
@@ -33,20 +35,22 @@ $(function () {
         speed: 500,
         responsive: [
         {
-        breakpoint: 0,
-        settings: {
-            centerMode: false } },
-    
-    
+            breakpoint: 0,
+            settings: {
+                centerMode: false 
+            } 
+        },
         {
-        breakpoint: 768,
-        settings: {
-            centerMode: true } }] 
+            breakpoint: 768,
+            settings: {
+                centerMode: true 
+            } 
+        }] 
     });            
 });
 
 var typed = new Typed('.typing',{
-    strings: ["An Engineer", "A Robotics Enthusiast", "A Researcher", "A Blogger", "A Budding Astrologer"],
+    strings: ["An Engineer", "A Robotics Enthusiast", "A Researcher", "A (currently infrequent) Blogger", "An aspiring Astrologer"],
     loop: true,
     typeSpeed: 80,
     backSpeed: 40
