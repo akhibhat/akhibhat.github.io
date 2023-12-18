@@ -50,7 +50,7 @@ $(function () {
 });
 
 var typed = new Typed('.typing',{
-    strings: ["An Engineer", "A Robotics Enthusiast", "A Researcher", "A (currently infrequent) Blogger", "An aspiring Astrologer"],
+    strings: ["Robotics Engineer", "Researcher", "(currently infrequent) Blogger", "Aspiring Astrologer"],
     loop: true,
     typeSpeed: 80,
     backSpeed: 40

@@ -104,7 +104,26 @@ ul {
 /** * Body */
 body {
     background-color: #f8f9f9;
+    overflow-y: scroll;
 }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 0px;
+    background: #003471; 
+}
+
 /** * Sections */
 section {
     position: relative;
@@ -661,4 +680,21 @@ blockquote > span::after {
     margin: 0 0 0 8px;
     position: relative;
     top: 3px;
+}
+
+/* Images */
+.polaroid {
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    border-radius: 16px;
+    border-color: black;
+}
+
+.container {
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #000;
 }
