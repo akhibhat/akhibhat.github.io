@@ -307,12 +307,16 @@
                 <hr style="margin-top: 50px; width: 20%; height: 2px; color: #003471; background-color: #003471; border-color: #001329;">
                 <div class="mn-social-bottom-c" align="center">
                     <p>Share this article:</p>
-                    <a class="mn-social-bottom" target="_blank">
-                        <i class="fa fa-lg fa-facebook"></i>
-                    </a>
-                    <a class="mn-social-bottom"><i class="fa fa-lg fa-twitter"></i></a>
-                    <a class="mn-social-bottom"><i class="fa fa-lg fa-linkedin"></i></a>
-                    <a class="mn-social-bottom"><i class="fa fa-lg fa-instagram"></i></a>
+                    <a class="mn-social-bottom" target="_blank"><i class="fa fa-lg fa-facebook"></i></a>
+                    <a class="mn-social-bottom" target="_blank"><i class="fa fa-lg fa-twitter"></i></a>
+                    <a class="mn-social-bottom" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a>
+                    <a class="mn-social-bottom" target="_blank" data-action="share/whatsapp/share"><i class="fa fa-lg fa-whatsapp"></i></a>
+                    <span id="copy" tooltip="Copy to clipboard"><a class="mn-social-bottom"><i class="fa fa-lg fa-link"></i></a></span>
+                    <div class="shareLink">
+                        <div class="permalink">
+                            <input class="textLink" id="text" type="text" name="shortlink" value="" id="copy-link" readonly="">
+                        </div>
+                    </div>
                 </div>
             </section>
           
@@ -347,11 +351,7 @@
                 </div>
             </a>
         </section>
-        <script>
-            var url = window.location;
-            var title = document.title;
-            var mnsocial = document.getElementsByClassName('mn-social-bottom');
-            mnsocial[0].href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+        <script id="rendered-js" src="../js/blogs.js">
         </script>
     </body>
 </html>
