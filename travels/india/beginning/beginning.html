@@ -112,6 +112,21 @@
                             </div>
                         </div>
                     </div>
+                    <hr style="margin-top: 50px; width: 80%; color: #003471; border-color: #001329;">
+                    <div id="comment-container-travels-india-beginning"> 
+                        <!-- Comments will be displayed here -->
+                    </div>
+                    <form>
+                        <h2 style="font-family: Lora; margin-top: 40px; margin-bottom: 40px; font-style: normal;"> Leave a Comment </h2>
+
+                        <label for="name-travels-india-beginning">Name:</label>
+                        <input type="text" id="name-travels-india-beginning">
+
+                        <label for="comment-container-travels-india-beginning">Add a comment:</label>
+                        <textarea id="comment-travels-india-beginning" rows="4" cols="50"></textarea>
+
+                        <button type="button" onclick="submitComment('travels', 'india', 'beginning')">Submit</button>
+                    </form>
                 </div>
             </section>
         </article>
@@ -124,6 +139,40 @@
             </a>
         </section>
         <script id="rendered-js" src="../../../js/blogs.js">
+        </script>
+        <script>
+            async function submitComment(category, post, postId) {
+                const name = document.getElementById(`name-${category}-${post}-${postId}`).value;
+                const commentText = document.getElementById(`comment-${category}-${post}-${postId}`).value;
+
+                if (name.trim() !== '' && commentText.trim() !== '') {
+                    const response = await fetch('/comment', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ category, post, postId, name, text: commentText }),
+                    });
+
+                    const newComment = await response.json();
+                    document.getElementById(`name-${category}-${post}-${postId}`).value = '';
+                    document.getElementById(`comment-${category}-${post}-${postId}`).value = '';
+                    displayComments(category, post, postId);
+                }
+            }
+
+            async function displayComments(category, post, postId) {
+                const response = await fetch(`/comment/${category}/${post}/${postId}`);
+                const comments = await response.json();
+                const commentContainer = document.getElementById(`comment-container-${category}-${post}-${postId}`);
+                commentContainer.innerHTML = ''; // Clear existing comments
+
+                comments.forEach((comment) => {
+                    const commentElement = document.createElement('div');
+                    commentElement.innerHTML = `<p>${comment.text}</p>`;
+                    commentContainer.appendChild(commentElement);
+                });
+            }
         </script>
     </body>
 </html>
