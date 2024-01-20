@@ -363,7 +363,7 @@ body {
     overflow: hidden;
     background-repeat: no-repeat;
     outline: none;
-    background-size: auto 400px, cover;
+    background-size: auto 500px, cover;
     background-position: top;
     margin: 0 24px;
     width: 80%;
