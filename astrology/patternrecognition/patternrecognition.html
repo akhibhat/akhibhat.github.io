@@ -102,7 +102,7 @@
 
                     <p style="margin-bottom: 26px; text-align: justify;">
                         How did this happen though? How did you go from a baby who touched a hot utensil unknowingly, to knowing the exact moment to step on the brakes 
-                        so that the vehicle comes to a stop in time? (need rephrasing)
+                        so that the vehicle comes to a stop at a signal?
                     </p>
 
                     <h2 style="margin-bottom: 40px; margin-top: 40px; font-family: 'Lora'; color: #003471;">How do humans learn?</h2>
@@ -166,7 +166,7 @@
                         </div>
                     </div>
 
-                    <p style="margin-bottom: 26px; text-align: justify;">
+                    <p style="margin-bottom: 26px; text-align: justify; text-indent: 2em;">
                         In 1943, Warren McCulloch and Walter Pitts published a 
                         <a href="https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf" target="_blank">
                             seminal paper</a> that explored the idea of modeling neural activity using formal logical 
@@ -212,37 +212,46 @@
 
                     <h2 style="margin-bottom: 26px; font-family: 'Lora'; color: #003471;">How can Google recognize different objects in your images?</h2>
 
-                    <p style="margin-bottom: 26px; text-align: justify;">
+                    <p style="margin-bottom: 26px; text-align: justify; text-indent: 2em;">
                         If you have the Google Photos app installed on your phone, open it and click on the "Search" tab in the bottom right. You will see sections 
                         like Places, Documents, Things and more depending on your settings. View more in the Things section and you will see a screen as below.
                     </p>
 
-                    <!--div style="margin-left: auto; margin-right: auto;" class="polaroid">
-                        <img src="patternrecognition/things_screen.png" alt="Things" style="width: 100%; margin-top: 0px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                    <div style="margin-left: auto; margin-right: auto; width: 100%; align-items: center;" class="polaroid">
+                        <img src="things_screen.png" alt="Things" style="width: 32.9%; margin-top: 0px; border-top-left-radius: 16px;">
+                        <img src="statues.png" alt="Things" style="width: 32.9%; margin-top: 0px;">
+                        <img src="cliffs.png" alt="Things" style="width: 33%; margin-top: 0px; border-top-right-radius: 16px;">
                         <div class="container">
-                            <p style="font-style: italic; font-size: small;">[TODO: should have things, statues and cliffs together</p>
+                            <p style="font-style: italic; font-size: small;">Images clearly separated according to the items detected.</p>
                         </div>
-                    </div-->
+                    </div>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        You can see that Google has classified all your photos based on the "things" it finds in them. All images clicked near cliffs have been grouped 
-                        together. The images with statues have been separated from the images with cliffs. But how?
+                        In the first figure you can see that Google has classified all your photos based on the "things" it finds in them. All images clicked near 
+                        cliffs in the second figure have been grouped together while the images with statues in the third are separated from the images with cliffs.
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        What you cannot see here is that the software has been "trained" by engineers at Google to identify all kinds of things in the world. Let me 
-                        simplify.
+                        But how?
+                    </p>
+
+                    <p style="margin-bottom: 26px; text-align: justify;">
+                        What you cannot see here is that the software has been "trained" by engineers at Google to identify all kinds of things in the world. 
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
                         A robot or a computer being able to identify various things in images is not magic, but a meticulously designed algorithm involving multiple 
-                        steps. First, thousands of images, each, of all the things that the algorithm should be able to identify are collected. Depending on the 
+                        steps. Let me explain one such algorithm used for this "training".
+                    </p>
+                    
+                    <p style="margin-bottom: 26px; text-align: justify;">
+                        First, thousands of images, each, of all the things that the algorithm should be able to identify are collected. Depending on the 
                         algorithm chosen, these images are then diligently labeled by the engineers using either of the annotation methods as explained in this 
                         <span><a href="https://xailient.com/blog/exploring-data-labeling-and-the-6-different-types-of-image-annotation/" target="_blank">blog</a></span>.
                         One of the methods used is represented below.
                     </p>
 
-                    <div style="margin-left: auto; margin-right: auto;" class="polaroid">
+                    <div style="margin-left: auto; margin-right: auto; width: 50%;" class="polaroid">
                         <img src="labeled_apple.jpg" alt="Annotation methods" style="width: 100%; margin-top: 0px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
                         <div class="container">
                             <p style="font-style: italic; font-size: small;">Bounding Box showing the coordinates stored (Photo by 
@@ -279,20 +288,22 @@
                         <!--This individual score is a probability of the object detected in the new image being the corresponding unique object it remembers.-->
                     </p>
 
-                    <!--h2 style="margin-bottom: 26px; font-family: 'Lora'; color: #003471;">Autonomous Cars</h2>
+                    <!--p style="margin-bottom: 26px; font-family: 'Lora'; color: #003471;"> [TODO] Need an image of object recognition with percentages here</p-->
 
-                    <p style="margin-bottom: 26px; text-align: justify;">
-                        [Explain one of the features (MPC?) that will have pattern recognition as well as prediction of future states. This will help lead on to 
-                        predictions in astrology as well]
-                    </p-->
+                    <div style="margin-left: auto; margin-right: auto;" class="polaroid">
+                        <img src="class_probabilities.jpg" alt="Text file" style="width: 100%; margin-top: 0px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                        <div class="container">
+                            <p style="font-style: italic; font-size: small;">The algorithm spitting class probabilities with the bounding box</p>
+                        </div>
+                    </div>
 
                     <h2 style="margin-bottom: 26px; font-family: 'Lora'; color: #003471;">Where does Astrology tie in?</h2>
 
-                    <p style="margin-bottom: 26px; text-align: justify;">
+                    <p style="margin-bottom: 26px; text-align: justify; text-indent: 2em;">
                         Summarizing everything so far, humans learn by noticing patterns in events, and the associated responses - both environmental and personal. 
                         Furthermore, we developed our robots to mimic us by translating the same principles by which we learn, into code. Why not extend the same to 
-                        the study of space and time? Why not use patterns to learn about the various events in history? Why not use the knowledge of these patterns to 
-                        take precautions when similar patterns reoccur so that we can avoid repeating the same mistakes over and over again?
+                        the study of space and time? Why not use astronomical patterns to learn about the various events in history? Why not use the knowledge of 
+                        these patterns to take precautions when similar patterns reoccur so that we can avoid repeating the same mistakes over and over again?
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
@@ -308,7 +319,7 @@
                         and the data about their positions in the sky is readily available.
                     </p>
 
-                    <div style="margin-left: auto; margin-right: auto;" class="polaroid">
+                    <div style="margin-left: auto; margin-right: auto; width: 50%;" class="polaroid">
                         <a href="https://www.lpi.usra.edu/education/skytellers/constellations/" target="_blank">
                             <img src="celest_sphere.jpg" alt="Celestial Sphere" 
                                 style="width: 100%; margin-top: 0px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
@@ -329,7 +340,7 @@
                         result of this, from the Earth's frame of reference, any point on the Celestial Sphere can be seen to rise from the East and set in the West.
                     </p>
 
-                    <div style="margin-left: auto; margin-right: auto;" class="polaroid">
+                    <div style="margin-left: auto; margin-right: auto; width: 50%;" class="polaroid">
                         <a href="https://www.sciencephoto.com/media/532996/view/zodiac-constellations-artwork" target="_blank">
                             <img src="zodiac-constellations-artwork-david-a-hardy.jpg" alt="Zodiac" 
                                 style="width: 100%; margin-top: 0px; border-top-left-radius: 16px; border-top-right-radius: 16px;">
@@ -378,12 +389,12 @@
                 
                     <p style="margin-bottom: 26px; text-align: justify;">
                         Let us keep the discussion about influence on humans for a future blog and focus only on how these patterns affect the world. More 
-                        specifically, I will focus on the permutations and combinations of 3 planets - Mars, Jupiter and Saturn, and the 2 nodes. No zodiac signs, no 
-                        constellations ...
+                        specifically, I will focus on a few permutations and combinations of 3 planets - Mars, Jupiter and Saturn, and the 2 nodes. No zodiac signs, no 
+                        nakshatras.
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        Before I start mentioning the patterns, I would like to put a disclaimer out there.
+                        Before I start mentioning the patterns though, I would like to put a disclaimer out there.
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
@@ -415,16 +426,47 @@
                         <span><a href="https://en.wikipedia.org/wiki/Imam_Reza_shrine_bombing" target="_blank">Imam Reza shrine bombing</a></span> in June 1994.
                     </p>
 
-                    <!--p style="margin-bottom: 26px; text-align: justify;">
-                        Another event that is still fresh in our memories is the Covid-19 virus. At the time the outbreak was first discovered in Wuhan in November 
-                        2019, the planets Jupiter and Saturn, along with Ketu were in the same sign. Rahu, being the North node, was exactly 180&deg away. The same 
-                        configuration, albeit in a different zodiac sign, was observed during the Flash Crash of 1962 and the Wahhabi sack of Karbala in 1802.
-                    </p-->
-
                     <p style="margin-bottom: 26px; text-align: justify;">
                         Even though the global impact of the respective instances might have been different, it is quite clear from the examples what category of 
                         events I am referring to.
                     </p>
+
+                    <p style="margin-bottom: 26px; text-align: justify; text-indent: 2em;">
+                        Another event that is still fresh in our memories is the Covid-19 pandemic. At the time the outbreak was first discovered in Wuhan in November 
+                        2019, the planet Jupiter was in the same sign as Ketu. Rahu, again, was exactly 180&deg away. Another disastrous pandemic that 
+                        plagued the whole world, killing millions of people, was the Black Death. Even though Wikipedia records the start of the pandemic from 1346, 
+                        many scholars believe that the plague 
+                        <a href="https://www.thoughtco.com/black-death-in-asia-bubonic-plague-195144" target="_blank">originally began in 1331</a> which eventually 
+                        spread to Europe. The planetary configurations in 1331? Jupiter and Ketu in the exact same sign as during Covid-19. 
+                    </p>
+
+                    <p style="margin-bottom: 26px; text-align: justify;">
+                        Want to know where the plague outbreak originally erupted?
+                    </p>
+
+                    <p style="margin-bottom: 26px; text-align: justify;">
+                        In the Yuan empire in China.
+                    </p>
+
+                    <p style="margin-bottom: 26px; text-align: justify;">
+                        Coincidence?
+                    </p>
+
+                    <!--p style="margin-bottom: 26px; text-align: justify;">
+                        Another event that is still fresh in our memories is the Covid-19 virus. At the time the outbreak was first discovered in Wuhan in November 
+                        2019, the planets Jupiter and Saturn, along with Ketu were in the same sign. Rahu, being the North node, was exactly 180&deg away. The same 
+                        configuration, albeit in a different zodiac sign, was observed during the Flash Crash of 1962 and the Wahhabi sack of Karbala in 1802.
+
+                        Covid-19: Rahu in Gemini, Ketu + Saturn + Jupiter in Sagittarius
+                        Black Death 1331: Rahu in Gemini, Jupiter + Ketu in Sagittarius
+
+                        H1N1 Pandemic 2009: Rahu in Sagittarius
+                        Spanish Flu 1918 (H1N1 virus): Rahu in Sagittarius
+                        Russian Flu 1977 (H1N1 virus): Rahu in Pisces - considered to be because of laboratory leak
+
+                        Hong Kong Flu pandemic: Rahu in Pisces
+                        Asian Flu pandemic : Rahu in Scorpio
+                    </p-->
 
                     <p style="margin-bottom: 26px; text-align: justify;">
                         Shifting focus to a different category of events, the 
@@ -436,11 +478,11 @@
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        Coincidence?
+                        Still doubtful?
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        Well, lets look at another one. Maybe something constructive?
+                        Lets look at another one then. Maybe something constructive this time?
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
@@ -449,14 +491,7 @@
                         that same zodiac sign since last year and will continue to do so for the entirety of this year as well. Heard about ChatGPT, anyone?
                     </p>
 
-                    <p style="margin-bottom: 26px; text-align: justify;">
-                        From the handful instances that I have mentioned above, you can definitely see some patterns in the events and the corresponding planetary 
-                        configurations. This is just within the last few years. And I haven't even touched upon the more intricate details of the planetary 
-                        configurations. We can expand this study further in space, to the specific zodiac signs, the nakshatras, finer divisions of these zodiac signs 
-                        and nakshatras, and back in time as well. Just imagine the magnitude of data that will need to be analysed.
-                    </p>
-
-                    <blockquote class="text-left-align">
+                    <blockquote class="text-left-align" style="margin-bottom: 26px;">
                         <span style="margin-bottom: 26px;">
                             Nature uses only the longest threads to weave her patterns, so that each small piece of her fabric reveals the organization of the 
                             entire tapestry.
@@ -467,17 +502,24 @@
                     </blockquote>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        Can deep learning models help us analyze this data and improve our understanding of astrological patterns to make better predictions? Can AI 
-                        help us unweave
+                        From the handful instances that I have mentioned above, you can definitely see some patterns in the events and the corresponding planetary 
+                        configurations. This is just within the last few years. And I haven't even touched upon the more intricate details of the planetary 
+                        configurations. We can expand this study further in space, to the specific zodiac signs, the nakshatras, finer divisions of these zodiac signs 
+                        and nakshatras, and further back in time as well. Just imagine the magnitude of data that will need to be analysed.
                     </p>
 
                     <p style="margin-bottom: 26px; text-align: justify;">
-                        Who knows?
+                        Can deep learning models help us analyze this data and improve our understanding of astrological patterns to make better predictions? Can AI 
+                        help us unweave the patterns of Mother Nature and put together the different pieces that make up this magnificent tapestry of the Universe?
+                    </p>
+
+                    <p style="margin-bottom: 26px; text-align: justify;">
+                        We won't know if we don't try! &#128521;
                     </p>
                     
-                    <p style="margin-bottom: 26px; text-align: justify;">
+                    <!--p style="margin-bottom: 26px; text-align: justify;">
                         But if we can avoid or even be prepared for unforeseen situations, it is definitely worth a try!
-                    </p>
+                    </p-->
 
                     <hr style="margin-top: 50px; width: 20%; height: 2px; color: #003471; background-color: #003471; border-color: #001329;">
                     <div class="mn-social-bottom-c" align="center">
@@ -520,10 +562,10 @@
         </article>
           
         <section class="next">
-            <a class="next__link" href="../index.html" style="background-image: url('');">
+            <a class="next__link" href="#" style="background-image: url('');">
                 <div class="next__container">
                     <span>Read Next</span>
-                    <h2>{{page.previous.title}}</h2>
+                    <h2>The Birth Chart: A State Space representation</h2>
                 </div>
             </a>
         </section>
