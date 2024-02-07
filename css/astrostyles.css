@@ -699,6 +699,26 @@ blockquote > span::after {
     color: #000;
 }
 
+.triple-polaroid {
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+    border-radius: 16px;
+    border-color: black;
+}
+
+.triple-polaroid-image {
+    width: calc(100%/3 - 5.5px);
+}
+
+@media (max-width: 800px){
+    .container{
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
 /* Share section */
 .mn-social-bottom-c {
     margin-top: 50px;
