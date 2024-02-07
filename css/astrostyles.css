@@ -709,7 +709,7 @@ blockquote > span::after {
 }
 
 .triple-polaroid-image {
-    width: calc(100%/3 - 5.5px);
+    width: calc(100%/3 - 6px);
 }
 
 @media (max-width: 800px){
