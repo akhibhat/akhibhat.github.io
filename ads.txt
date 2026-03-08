@@ -1,0 +1,5 @@
+# ads.txt placeholder
+# Add authorized digital sellers here when monetization is enabled.
+# Format: <ad system domain>, <publisher account id>, <relationship>, <certification authority id>
+# Example:
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
