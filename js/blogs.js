@@ -1,4 +1,4 @@
-var url = window.location;
+var url = window.location.href;
 var title = document.title;
 var mnsocial = document.getElementsByClassName('mn-social-bottom');
 mnsocial[0].href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
